@@ -2,7 +2,7 @@ package org.example.calculate.tobe;
 
 import org.example.calculate.domain.PositiveNumber;
 
-public class AdditionOperator implements NewArithmeticOperator {
+public class AdditionOperator implements ArithmeticOperator {
 
     @Override
     public boolean supports(String operator) {
