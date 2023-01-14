@@ -5,8 +5,9 @@ import java.util.Objects;
 public class RequestLine {
 
     private final String method;  // GET
-    private final String urlPath;  // /calculate?operand1=11&operator=*&operand2=55
-    private String queryString;
+    private final String urlPath;  // /calculate
+    private String queryString;  // operand1=11&operator=*&operand2=55
+
     public RequestLine(String method, String urlPath, String queryString) {
         this.method = method;
         this.urlPath = urlPath;
@@ -21,7 +22,7 @@ public class RequestLine {
         String[] urlPathTokens = tokens[1].split("\\?");
         this.urlPath = urlPathTokens[0];
 
-        if (urlPathTokens.length==2) {
+        if (urlPathTokens.length == 2) {
             this.queryString = urlPathTokens[1];
         }
     }
