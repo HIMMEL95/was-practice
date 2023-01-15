@@ -1,6 +1,6 @@
-package org.example.calculate.tobe;
+package org.example.calculator.tobe;
 
-import org.example.calculate.domain.PositiveNumber;
+import org.example.calculator.domain.PositiveNumber;
 
 public interface ArithmeticOperator {
     boolean supports(String operator);

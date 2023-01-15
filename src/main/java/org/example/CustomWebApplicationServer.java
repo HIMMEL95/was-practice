@@ -33,11 +33,13 @@ public class CustomWebApplicationServer {
                 try (InputStream in = clienSokcet.getInputStream(); OutputStream out = clienSokcet.getOutputStream()){
                     BufferedReader br = new BufferedReader(new InputStreamReader(in, StandardCharsets.UTF_8));
                     DataOutputStream dos = new DataOutputStream(out);
-
+                    /*프로토콜을 보여주는 부분
                     String line;
                     while ((line = br.readLine()) != "") {
                         System.out.println(line);
-                    }
+                    }*/
+
+
                 }
             }
         }
